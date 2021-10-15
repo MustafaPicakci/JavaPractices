@@ -1,5 +1,7 @@
 public interface User {
-    void changeEyeColor();
+    void print(String indent);
+
+    void changeEyeColor(String color);
 
     void addSubUser(User user);
 

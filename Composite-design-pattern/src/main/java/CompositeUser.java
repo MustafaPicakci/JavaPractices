@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositeUser implements User{
+public class CompositeUser implements User {
     private int id;
     private String name;
     private String eyeColor;
@@ -11,12 +11,25 @@ public class CompositeUser implements User{
         this.id = id;
         this.name = name;
         this.eyeColor = eyeColor;
-        this.subUsers=new ArrayList<>();
+        this.subUsers = new ArrayList<>();
     }
+
     @Override
-    public void changeEyeColor() {
-        subUsers.forEach(User::changeEyeColor);
-        //subUsers.forEach(user-> user.changeEyeColor());
+    public void print(String indent) {
+        indent += indent;
+        System.out.println(indent+this);
+        for(User sub: this.subUsers){
+            sub.print(indent);
+        }
+
+    }
+
+    @Override
+    public void changeEyeColor(String color) {
+        this.eyeColor=color;
+        for(User sub: this.subUsers){
+            sub.changeEyeColor(color);
+        }
     }
 
     @Override
