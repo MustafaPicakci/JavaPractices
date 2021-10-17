@@ -10,12 +10,12 @@ import org.springframework.context.annotation.Primary;
 public class appConfig {
 
     @Bean()
-    public Print getPrintA() {
+    public IPrintA getPrintA() {
         return new PrintA(new RandomNumberGenerator());
     }
 
     @Bean()
-    public Print getPrintB() {
+    public IPrintB getPrintB() {
         return new PrintB(new RandomNumberGenerator());
     }
 

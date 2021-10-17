@@ -10,9 +10,9 @@ import com.bocek.api.*;
 @RestController
 public class PrintController {
 
-    private final IPrintA print;
+    private final IPrintB print;
 
-    public PrintController(IPrintA print) {
+    public PrintController(IPrintB print) {
         this.print = print;
     }
 

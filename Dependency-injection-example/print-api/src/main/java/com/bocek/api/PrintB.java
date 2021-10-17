@@ -1,6 +1,6 @@
 package com.bocek.api;
 
-public class PrintB implements Print {
+public class PrintB implements IPrintB {
 
     private final MessageGenerator messageGenerator;
 
