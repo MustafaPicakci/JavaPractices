@@ -1,0 +1,1041 @@
+{
+	"info": {
+		"_postman_id": "8f39a29e-4e61-49be-8728-8d0ede6818e5",
+		"name": "Employee-Permission",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FirmController",
+			"item": [
+				{
+					"name": "http://localhost:8080/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":10,\r\n    \"name\":\"Phexum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/firm/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"firm",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Phexum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/firm/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"firm",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/firm/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"firm",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/firm/11",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/firm/1123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"firm",
+								"1123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/firm/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 11,\r\n    \"name\": \"Phexum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/firm/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"firm",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/firm/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/firm/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"firm",
+								"14"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BuildingController",
+			"item": [
+				{
+					"name": "http://localhost:8080/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bodur İş Merkezi\",\r\n    \"address\": \"İçerenköy/Ataşehir\",\r\n    \"firm\": {\r\n        \"id\": 11,\r\n        \"name\": \"Phexum\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/building/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"building",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bodur İş Merkezi\",\r\n    \"address\": \"Ataşehir\",\r\n    \"firm\": {\r\n        \"id\": 1,\r\n        \"name\": \"Phexum\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/building/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"building",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/building/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"building",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/firm/11",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/building/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"building",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/building/findbyfirm",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bodur İş Merkezi\",\r\n    \"address\": \"İçerenköy/Ataşehir\",\r\n    \"firm\": {\r\n        \"id\": 1,\r\n        \"name\": \"Phexum\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/building/findbyfirm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"building",
+								"findbyfirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/building/",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"name\": \"Bilişim Vadisi\",\r\n    \"address\": \"Kocaeli\",\r\n    \"firm\": {\r\n        \"id\": 1,\r\n        \"name\": \"Phexum\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/building/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"building",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/building/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/building/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"building",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FloorController",
+			"item": [
+				{
+					"name": "http://localhost:8080/floor/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"level\": 1,\r\n    \"building\": {\r\n        \"id\": 1,\r\n        \"name\": \"Bilişim Vadisi\",\r\n        \"address\": \"Çamlıca\",\r\n        \"firm\": {\r\n            \"id\": 1,\r\n            \"name\": \"Phexum_TŞKM\"\r\n        }\r\n    },\r\n    \"entrancePermissions\": [\r\n        \"ALLOWED_FLOOR_0\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/floor/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"floor",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/floor/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/floor/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"floor",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/floor/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"level\": 0,\r\n    \"building\": {\r\n        \"id\": 1,\r\n        \"name\": \"Bilişim Vadisi\",\r\n        \"address\": \"Çamlıca\",\r\n        \"firm\": {\r\n            \"id\": 3,\r\n            \"name\": \"Phexum_TŞKM\"\r\n        }\r\n    },\r\n    \"entrancePermissions\": [\r\n        \"ALLOWED_FLOOR_0\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/floor/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"floor",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/floor/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/floor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"floor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/floor/2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/floor/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"floor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/floor/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 1,\r\n        \"level\": 1,\r\n        \"building\": {\r\n            \"id\": 3,\r\n            \"name\": \"Bilişim Vadisi\",\r\n            \"address\": \"Çamlıca\",\r\n            \"firm\": {\r\n                \"id\": 3,\r\n                \"name\": \"Phexum_TŞKM\"\r\n            }\r\n        },\r\n        \"entrancePermissions\": [\r\n            \"ALLOWED_APARTMENT_1\",\r\n            \"ALLOWED_APARTMENT_2\"\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/floor/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"floor",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ApartmentController",
+			"item": [
+				{
+					"name": "http://localhost:8080/apartment/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"floor\": {\r\n        \"id\": 1,\r\n        \"level\": 0,\r\n        \"building\": {\r\n            \"id\": 1,\r\n            \"name\": \"Deneme\",\r\n            \"address\": \"Çamlıca\",\r\n            \"firm\": {\r\n                \"id\": 1,\r\n                \"name\": \"Phexum\"\r\n            }\r\n        },\r\n        \"entrancePermissions\": [\r\n            \"ALLOWED_FLOOR_0\"\r\n        ]\r\n    },\r\n    \"no\": 2,\r\n    \"entrancePermissions\": [\r\n        \"ALLOWED_APARTMENT_2\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/apartment/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"apartment",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/apartment/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/apartment/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"apartment",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/apartment/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\"id\": 7,\r\n    \"floor\": {\r\n        \"id\": 20,\r\n        \"level\": 2,\r\n        \"building\": {\r\n            \"id\": 33,\r\n            \"name\": \"Deneme\",\r\n            \"address\": \"Çamlıca\",\r\n            \"firm\": {\r\n                \"id\": 5,\r\n                \"name\": \"Phexum\"\r\n            }\r\n        },\r\n        \"entrancePermissions\": [\r\n            \"ALLOWED_APARTMENT_4\",\r\n            \"ALLOWED_APARTMENT_5\"\r\n        ]\r\n    },\r\n    \"no\": 2,\r\n    \"entrancePermissions\": [\r\n        \"ALLOWED_APARTMENT_4\",\r\n        \"ALLOWED_APARTMENT_5\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/apartment/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"apartment",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/apartment/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"floor\": {\r\n        \"id\": 20,\r\n        \"level\": 2,\r\n        \"building\": {\r\n            \"id\": 33,\r\n            \"name\": \"Deneme\",\r\n            \"address\": \"Çamlıca\",\r\n            \"firm\": {\r\n                \"id\": 5,\r\n                \"name\": \"Phexum\"\r\n            }\r\n        },\r\n        \"entrancePermissions\": [\r\n            \"ALLOWED_APARTMENT_4\",\r\n            \"ALLOWED_APARTMENT_5\"\r\n        ]\r\n    },\r\n    \"no\": 1,\r\n    \"entrancePermissions\": [\r\n        \"ALLOWED_APARTMENT_4\",\r\n        \"ALLOWED_APARTMENT_5\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/apartment/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"apartment",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/apartment/6",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/apartment/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"apartment",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/apartment/6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/apartment/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"apartment",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DepartmentController",
+			"item": [
+				{
+					"name": "http://localhost:8080/department/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/department/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/department/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/department/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/department/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/department/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/department/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Arge\",\n    \"firm\": {\n        \"id\": 1,\n        \"name\": \"Phexum\"\n    },\n    \"permissions\": [\n        \"ALLOWED_FLOOR_0\",\"ALLOWED_FLOOR_1\"\n\n    ],\n    \"apartment\": {\n        \"id\": 1,\n        \"floor\": {\n            \"id\": 1,\n            \"level\": 0,\n            \"building\": {\n                \"id\": 1,\n                \"name\": \"Deneme\",\n                \"address\": \"Çamlıca\",\n                \"firm\": {\n                    \"id\": 1,\n                    \"name\": \"Phexum\"\n                }\n            },\n            \"entrancePermissions\": [\n                \"ALLOWED_FLOOR_0\"\n            ]\n        },\n        \"no\": 1,\n        \"entrancePermissions\": [\n            \"ALLOWED_APARTMENT_1\"\n        ]\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/department/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/department/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Arge\",\r\n    \"firm\": {\r\n        \"id\": 1,\r\n        \"name\": \"Phexum\"\r\n    },\r\n    \"permissions\": [\r\n        \"ALLOWED_FLOOR_1\"\r\n    ],\r\n    \"apartment\": {\r\n        \"id\": 1,\r\n        \"floor\": {\r\n            \"id\": 1,\r\n            \"level\": 0,\r\n            \"building\": {\r\n                \"id\": 1,\r\n                \"name\": \"Deneme\",\r\n                \"address\": \"Çamlıca\",\r\n                \"firm\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"Phexum\"\r\n                }\r\n            },\r\n            \"entrancePermissions\": [\r\n                \"ALLOWED_FLOOR_0\"\r\n            ]\r\n        },\r\n        \"no\": 1,\r\n        \"entrancePermissions\": [\r\n            \"ALLOWED_APARTMENT_1\"\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/department/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/department/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 1,\r\n        \"level\": 1,\r\n        \"building\": {\r\n            \"id\": 3,\r\n            \"name\": \"Bilişim Vadisi\",\r\n            \"address\": \"Çamlıca\",\r\n            \"firm\": {\r\n                \"id\": 3,\r\n                \"name\": \"Phexum_TŞKM\"\r\n            }\r\n        },\r\n        \"entrancePermissions\": [\r\n            \"ALLOWED_APARTMENT_1\",\r\n            \"ALLOWED_APARTMENT_2\"\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/department/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EmployeeController",
+			"item": [
+				{
+					"name": "EmployeeUseCaseController",
+					"item": [
+						{
+							"name": "http://localhost:8080/employee-use-case/enter-apartment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee\": {\r\n        \"id\": 1,\r\n        \"name\": \"Tugay\",\r\n        \"department\": {\r\n            \"id\": 1,\r\n            \"name\": \"Arge\",\r\n            \"firm\": {\r\n                \"id\": 1,\r\n                \"name\": \"Phexum\"\r\n            },\r\n            \"permissions\": [\r\n                \"ALLOWED_FLOOR_1\"\r\n            ],\r\n            \"apartment\": {\r\n                \"id\": 1,\r\n                \"floor\": {\r\n                    \"id\": 1,\r\n                    \"level\": 0,\r\n                    \"building\": {\r\n                        \"id\": 1,\r\n                        \"name\": \"Bodur İş Merkezi\",\r\n                        \"address\": \"Ataşehir\",\r\n                        \"firm\": {\r\n                            \"id\": 1,\r\n                            \"name\": \"Phexum\"\r\n                        }\r\n                    },\r\n                    \"entrancePermissions\": [\r\n                        \"ALLOWED_FLOOR_0\"\r\n                    ]\r\n                },\r\n                \"no\": 1,\r\n                \"entrancePermissions\": [\r\n                    \"ALLOWED_APARTMENT_1\"\r\n                ]\r\n            }\r\n        },\r\n        \"permissions\": [\r\n            \"ALLOWED_APARTMENT_1\"\r\n        ]\r\n    },\r\n    \"apartment\": {\r\n        \"id\": 2,\r\n        \"floor\": {\r\n            \"id\": 1,\r\n            \"level\": 1,\r\n            \"building\": {\r\n                \"id\": 1,\r\n                \"name\": \"Bodur İş Merkezi\",\r\n                \"address\": \"Ataşehir\",\r\n                \"firm\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"Phexum\"\r\n                }\r\n            },\r\n            \"entrancePermissions\": [\r\n                \"ALLOWED_FLOOR_0\"\r\n            ]\r\n        },\r\n        \"no\": 2,\r\n        \"entrancePermissions\": [\r\n            \"ALLOWED_APARTMENT_2\"\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee-use-case/enter-apartment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee-use-case",
+										"enter-apartment"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8080/employee-use-case/enter-floor",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee\": {\r\n        \"id\": 1,\r\n        \"name\": \"Tugay\",\r\n        \"department\": {\r\n            \"id\": 1,\r\n            \"name\": \"Arge\",\r\n            \"firm\": {\r\n                \"id\": 1,\r\n                \"name\": \"Phexum\"\r\n            },\r\n            \"permissions\": [\r\n                \"ALLOWED_FLOOR_1\"\r\n            ],\r\n            \"apartment\": {\r\n                \"id\": 1,\r\n                \"floor\": {\r\n                    \"id\": 1,\r\n                    \"level\": 0,\r\n                    \"building\": {\r\n                        \"id\": 1,\r\n                        \"name\": \"Bodur İş Merkezi\",\r\n                        \"address\": \"Ataşehir\",\r\n                        \"firm\": {\r\n                            \"id\": 1,\r\n                            \"name\": \"Phexum\"\r\n                        }\r\n                    },\r\n                    \"entrancePermissions\": [\r\n                        \"ALLOWED_FLOOR_0\"\r\n                    ]\r\n                },\r\n                \"no\": 1,\r\n                \"entrancePermissions\": [\r\n                    \"ALLOWED_APARTMENT_1\"\r\n                ]\r\n            }\r\n        },\r\n        \"permissions\": [\r\n            \"ALLOWED_APARTMENT_1\"\r\n        ]\r\n    },\r\n    \"floor\": {\r\n        \"id\": 2,\r\n        \"level\": 1,\r\n        \"building\": {\r\n            \"id\": 1,\r\n            \"name\": \"Bodur İş Merkezi\",\r\n            \"address\": \"Ataşehir\",\r\n            \"firm\": {\r\n                \"id\": 1,\r\n                \"name\": \"Phexum\"\r\n            }\r\n        },\r\n        \"entrancePermissions\": [\r\n            \"ALLOWED_FLOOR_2\"\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee-use-case/enter-floor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee-use-case",
+										"enter-floor"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "http://localhost:8080/department/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employee/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/department/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employee/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/department/1 Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employee/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/department/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Mahmut\",\n    \"permissions\": [\n        \"ALLOWED_APARTMENT_1\"\n    ],\n    \"department\": {\n        \"id\": 1,\n        \"name\": \"Arge\",\n        \"firm\": {\n            \"id\": 1,\n            \"name\": \"Phexum\"\n        },\n        \"permissions\": [\n            \"ALLOWED_FLOOR_0\",\n            \"ALLOWED_FLOOR_1\"\n        ],\n        \"apartment\": {\n            \"id\": 1,\n            \"floor\": {\n                \"id\": 1,\n                \"level\": 1,\n                \"building\": {\n                    \"id\": 1,\n                    \"name\": \"Deneme\",\n                    \"address\": \"Çamlıca\",\n                    \"firm\": {\n                        \"id\": 1,\n                        \"name\": \"Phexum\"\n                    }\n                },\n                \"entrancePermissions\": [\n                    \"ALLOWED_APARTMENT_1\"\n                ]\n            },\n            \"no\": 1,\n            \"entrancePermissions\": [\n                \"ALLOWED_APARTMENT_1\"\n            ]\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employee/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/department/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Tugay\",\r\n    \"permissions\": [\r\n        \"ALLOWED_FLOOR_0\",\r\n        \"ALLOWED_APARTMENT_1\"\r\n    ],\r\n    \"department\": {\r\n        \"id\": 1,\r\n        \"name\": \"Arge\",\r\n        \"firm\": {\r\n            \"id\": 1,\r\n            \"name\": \"Phexum\"\r\n        },\r\n        \"permissions\": [\r\n            \"ALLOWED_FLOOR_1\"\r\n        ],\r\n        \"apartment\": {\r\n            \"id\": 1,\r\n            \"floor\": {\r\n                \"id\": 1,\r\n                \"level\": 0,\r\n                \"building\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"Bodur İş Merkezi\",\r\n                    \"address\": \"Ataşehir\",\r\n                    \"firm\": {\r\n                        \"id\": 1,\r\n                        \"name\": \"Phexum\"\r\n                    }\r\n                },\r\n                \"entrancePermissions\": [\r\n                    \"ALLOWED_FLOOR_0\"\r\n                ]\r\n            },\r\n            \"no\": 1,\r\n            \"entrancePermissions\": [\r\n                \"ALLOWED_APARTMENT_1\"\r\n            ]\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employee/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/department/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 1,\r\n        \"level\": 1,\r\n        \"building\": {\r\n            \"id\": 3,\r\n            \"name\": \"Bilişim Vadisi\",\r\n            \"address\": \"Çamlıca\",\r\n            \"firm\": {\r\n                \"id\": 3,\r\n                \"name\": \"Phexum_TŞKM\"\r\n            }\r\n        },\r\n        \"entrancePermissions\": [\r\n            \"ALLOWED_APARTMENT_1\",\r\n            \"ALLOWED_APARTMENT_2\"\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employee/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LogController",
+			"item": [
+				{
+					"name": "http://localhost:8080/department/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/log/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"log",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

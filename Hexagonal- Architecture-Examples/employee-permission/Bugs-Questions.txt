@@ -1,0 +1,11 @@
+
+*FindById vb. metotlar için gereken kontroller domainde yapılmalı.🎈
+*(Permission Array List new) modellerde implementasyon bulunmalı mı ? (etc :List<Permission> x=new ArrayList())
+*IndependentMapper'a ihtiyaç var mı, daha mantıklı bir çözüm bulunabilir mi ?
+*Log mesajı düzeltilmeli (flor->apartment) 🎈
+*Department-Apartment arasındaki ilişki gözden geçirilmeli.
+*Daireye erişim izni verildiğinde otomatik olarak kata da erişim izni verilmeli mi? 
+*Department,Building,employee,firm name null olmamalı,floor level null olmamalı
+*Bir binada en fazla 5 kat bulunabiliyor fakat floor için 6 tane yetki var.
+*private static final long serialVersionUID = 1L; ?
+*isAllowedAll nerede kullanılmalı?
