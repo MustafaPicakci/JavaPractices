@@ -1,2 +1,2 @@
 # JavaPractices
-OOP Concepts | Design Pattrens | Architectures | 
+OOP Concepts | Design Pattrens | Architectures
